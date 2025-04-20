@@ -15,3 +15,7 @@ Welcome to the Restaurant Website — a modern, responsive front-end project des
 🌐 Glassmorphism UI with custom styling
 
 📍 Contact section embedded Google Map
+
+## 🔗 Live Demo
+
+[https://naraharisettyvinay.github.io/restaurant-website/](https://naraharisettyvinay.github.io/restaurant-website/)
