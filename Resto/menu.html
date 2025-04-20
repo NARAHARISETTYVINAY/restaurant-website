@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <style>
+        body {
+            background-image: url('men.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        section {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            position: fixed;
+            top: 30px; 
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex;
+            gap: 20px;
+        }
+
+        section a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        section a:hover {
+            color: brown;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            margin-top: 140px;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 300px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            margin: 30px auto;
+            max-width: 1000px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .menu-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .menu-items {
+            flex: 1 1 350px;
+            padding: 20px;
+        }
+
+        .menu-items p {
+            color: white;
+            font-size: 1.3rem;
+            line-height: 2.2;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <a href="about.html">ABOUT</a>
+        <a href="res.html">RESERVATION</a>
+        <a href="menu.html">MENU</a>
+        <a href="shop.html">CONTACT</a>
+    </section>
+
+    <h1>BIRYANI'S</h1> 
+    <div class="menu-section">
+        <div class="menu-image">
+            <img src="biryani.jpg" alt="Biryani">
+        </div>
+        <div class="menu-items">
+            <p>
+                Chicken Dum Biryani...............380/-<br>
+                Chicken Fry Biryani.................350/-<br>
+                Chicken Biryani [sp]................250/-<br>
+                Mutton Biryani.........................400/-<br>
+                Egg Biryani..............................300/-<br>
+                Mixed Biryani [NV].................400/-<br>
+                Mixed Veg Biryani....................300/-<br>
+                Paneer Biryani..........................350/-<br>
+                Soya Biryani.............................300/-
+            </p>
+        </div>
+    </div>
+
+    <h2>STARTER'S</h2>
+    <div class="menu-section">
+        <div class="menu-image">
+            <img src="starters.jpg" alt="Starters">
+        </div>
+        <div class="menu-items">
+            <p>
+                Chicken Spring Rolls..............225/-<br>
+                Chicken 65..........................369/-<br>
+                Chilli Chicken......................369/-<br>
+                Grilled Chicken.....................369/-<br>
+                Chicken Manchurian.............369/-<br>
+                Pepper Chicken....................369/-<br>
+                Paneer Tikka.........................230/-<br>
+                Gobi Manchurian..................269/-<br>
+                Crispy Corn...........................275/-
+            </p>
+        </div>
+    </div>
+
+    <h3>PIZZA'S</h3>
+    <div class="menu-section">
+        <div class="menu-image">
+            <img src="pizza.jpg" alt="Pizza">
+        </div>
+        <div class="menu-items">
+            <p>
+                BBQ Chicken Pizza...............240/6slices<br>
+                Chicken Bacon Alfredo...........240/6slices<br>
+                Cheese Streak......................210/6slices<br>
+                Hawaiian.............................200/6slices<br>
+                Veggie.................................180/6slices<br>
+                Tandoori Paneer Pizza..........119/6slices<br>
+                Paneer Chatpata...................119/6slices<br>
+                Extravaganzza.....................250/6slices
+            </p>
+        </div>
+    </div>
+
+    <h4>LIQUID'S</h4>
+    <div class="menu-section">
+        <div class="menu-image">
+            <img src="liq.jpg" alt="Liquids">
+        </div>
+        <div class="menu-items">
+            <p>
+                Sangria.............................1200/-<br>
+                Special Sangria.................1400/-<br>
+                Margarita..........................400/-<br>
+                Mojito...............................375/-<br>
+                Blue Fantasy....................375/-<br>
+                Lemonaid........................150/-<br>
+                Lime Limitation................450/-<br>
+                Black Russian....................600/-<br>
+                Rum Bomb........................450/-
+            </p>
+        </div>
+    </div>
+
+    <h5>DESSERT'S</h5>
+    <div class="menu-section">
+        <div class="menu-image">
+            <img src="desserts.jpg" alt="Desserts">
+        </div>
+        <div class="menu-items">
+            <p>
+                Rasmalai (2pcs).............................149/-<br>
+                Gulab Jamun (2pcs)...................149/-<br>
+                Death Chocolate.......................149/-<br>
+                Brownie with Ice Cream..............149/-<br>
+                Fresh Fruit Cream......................149/-<br>
+                Black Buller Scope.....................120/-<br>
+                Berry Cheese Cake.....................90/-<br>
+                Chocolate Walnut......................180/-<br>
+                Italian Chocochips.....................150/-
+            </p>
+        </div>
+    </div>
+</body>
+</html>

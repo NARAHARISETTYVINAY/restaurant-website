@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <style>
+            body{
+                background-color-repeat : no-repeat;
+                background-size : 100% 120%;
+                background-attachment : fixed;
+            }
+            section {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 180%;
+                position: absolute;
+                top: 30px; 
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2; 
+            }
+            section a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+            }
+            h1{
+                position: absolute;
+                top: 90px; 
+                left: 100px;
+                color: white;
+                font-family: cursive;
+                font-size:180%;
+            }
+            .rd{
+                position: absolute;
+                top: 200px; 
+                left: 230px;
+                color: white;
+                font-family: cursive;
+                font-size:100%;
+            }
+            .td{
+                position: absolute;
+                top: 70px; 
+                left: 10px;
+                color: white;
+                font-family: cursive;
+                font-size:100%;
+            }
+            .ed{
+                position: absolute;
+                top: 157px; 
+                left: 5px;
+                color: white;
+                font-family: cursive;
+                font-size:100%;
+            }
+            button{
+                color: rgb(255, 255, 255);
+                background-color: rgb(255, 0, 0);
+            }
+        </style>
+    </head>
+    <body background="book.jpg">
+        <section>
+            <a href="about.html"> ABOUT</a>
+            <a href="res.html"> RESERVATION</a>
+            <a href="menu.html"> MENU</a>
+            <a href="shop.html"> SHOP</a>
+        </section>
+        <h1> BOOK YOUR TABLE</h1>
+        <section class="rd">
+            <form id="bookingForm" onsubmit="return validateForm()">
+                <label> NUMBER :</label>
+                <input type="number" id="mobileNumber" placeholder="Mobile Number" required><br><br>
+    
+                <label>NUMBER OF CHAIRS :</label><br>
+                
+                <div class="td">
+                    <div>
+                        <label for="2">2</label>
+                        <input type="radio" id="2Chairs" name="chairCount" value="2" checked /><br>
+                    </div>
+    
+                    <div>
+                        <label for="6">6</label>
+                        <input type="radio" id="6Chairs" name="chairCount" value="6" /><br>
+                    </div>
+    
+                    <div>
+                        <label for="9">9</label>
+                        <input type="radio" id="9Chairs" name="chairCount" value="9" /><br>
+                    </div>
+                </div>
+    
+                <div class="ed">
+                    <label> PAYMENT :</label>
+                    <input type="number" id="payment" placeholder="Pay In Advance" required><br><br>
+    
+                    <button type="submit"> BOOK TABLE</button>
+                </div>
+            </form>
+        </section>
+    
+        
+        <div id="popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999; align-items: center; justify-content: center;">
+            <div style="background-color: white; padding: 20px; border-radius: 10px;">
+                <h2>Your table has been booked!</h2>
+                <p>Thank you for choosing us.</p>
+                <button onclick="hidePopup()">Close</button>
+            </div>
+        </div>
+    
+        <script>
+            function showPopup() {
+                document.getElementById("popup").style.display = "flex";
+            }
+    
+            function hidePopup() {
+                document.getElementById("popup").style.display = "none";
+            }
+    
+            function validateForm() {
+                var mobileNumber = document.getElementById("mobileNumber").value;
+                var payment = document.getElementById("payment").value;
+    
+                if (mobileNumber === "" || payment === "") {
+                    alert("Please fill in all required fields.");
+                    return false;
+                } else {
+                    showPopup();
+                    return false; 
+                }
+            }
+        </script>
+    </body>
+</html>
