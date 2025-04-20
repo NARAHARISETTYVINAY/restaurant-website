@@ -9,6 +9,9 @@ Welcome to the Restaurant Website — a modern, responsive front-end project des
 🔥 Features:
 
 🧭 Multi-page layout (Home, Menu, Contact, Reservation, Feedback)
+
 📱 Fully responsive design with Bootstrap 5
+
 🌐 Glassmorphism UI with custom styling
+
 📍 Contact section embedded Google Map
