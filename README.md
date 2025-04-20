@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NARAHARISETTYVINAY/restaurant-website/main/banner.png" alt="Restaurant Banner" />
+</p>
+
 🍽️ About This Project
 
 Welcome to the Restaurant Website — a modern, responsive front-end project designed to simulate a complete restaurant experience online.
